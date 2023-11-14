@@ -5,13 +5,10 @@
 #include <stdarg.h>
 #include <stdlib.h>
 #include <unistd.h>
-
-
-
 /**
  * struct format - converter for printf
- * @ph: type char pointers of the specifier
- * @function: functions for the conversion specifier
+ * @ph: type char pointer of the specifier
+ * @function: function for the conversion specifier
  *
  */
 
@@ -28,7 +25,7 @@ int print_hex_extra(unsigned long int num);
 int _strlenc(const char *s);
 int print_HEX_extra(unsigned int num);
 int print_exc_string(va_list val);
-int print_HOL(va_list val);
+int print_HEX(va_list val);
 int print_hex(va_list val);
 int print_oct(va_list val);
 int print_bin(va_list val);
@@ -38,10 +35,9 @@ int print_i(va_list args);
 int print_d(va_list args);
 int _strlen(char *s);
 int rev_string(char *s);
-int print_39(void);
+int print_37(void);
 int print_c(va_list val);
 int print_s(va_list val);
 int _putchar(char c);
 int _printf(const char *format, ...);
-
 #endif
