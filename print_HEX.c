@@ -1,13 +1,12 @@
 #include "main.h"
-
 /**
- * print_HOL - prints an hexgecimal number.
+ * print_HEX - prints an hexgecimal number.
  * @val: arguments.
  * Return: counter.
  */
-int print_HOL(va_list val)
+int print_HEX(va_list val)
 {
-	int k;
+	int i;
 	int *array;
 	int counter = 0;
 	unsigned int num = va_arg(val, unsigned int);
@@ -21,18 +20,17 @@ int print_HOL(va_list val)
 	counter++;
 	array = malloc(counter * sizeof(int));
 
-	for (k = 0; k < counter; k++)
+	for (i = 0; i < counter; i++)
 	{
-		array[k] = tem % 16;
+		array[i] = tem % 16;
 		tem /= 16;
 	}
-	for (k = counter - 1; k >= 0; k--)
+	for (i = counter - 1; i >= 0; i--)
 	{
-		if (array[k] > 9)
-			array[k] = array[k] + 7;
-		_putchar(array[k] + '0');
+		if (array[i] > 9)
+			array[i] = array[i] + 7;
+		_putchar(array[i] + '0');
 	}
 	free(array);
 	return (counter);
 }
-

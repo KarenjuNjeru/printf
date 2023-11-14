@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <stdio.h>
 #include <stdarg.h>
 
@@ -33,4 +34,15 @@ int _printf(const char *format, ...) {
     va_end(args);
 
     return count;
+=======
+#include "main.h"
+/**
+ * print_37 - prints the char %.
+ * Return: 1.
+ */
+int print_37(void)
+{
+	_putchar(37);
+	return (1);
+>>>>>>> 322119a6074d5bbe60d468f5fe7d85985ee18d17
 }
